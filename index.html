@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restricting the length of a password</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container bg-warning mt-5">
+
+       <h1 class="pt-5">Password Length Checker</h1><br>
+        <form class="pb-5" role="form" action="" method="post" onsubmit="return verifyPassword(this)">
+            <div class="form-group row">
+                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <textarea name="password" id="password" rows="1" placeholder="Type your password"
+                              maxlength="20"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="submit"/>
+            <input type="reset" value="Clear"/>
+        </form>
+
+    </div>
+</body>
+</html>
